@@ -25,8 +25,8 @@
 
 <div class="header">
 	<span>Yucatan .</span>
-	<a href="!#" class="tab-link" on:click={e=>page="main"}>Home</a>
-	<a href="!#" class="tab-link" on:click={e=>page="about"}>About us</a>
+	<a href="!#" class="tab-link" on:click|preventDefault={e=>page="main"}>Home</a>
+	<a href="!#" class="tab-link" on:click|preventDefault={e=>page="about"}>About us</a>
 </div>
 {#if page == "main"}
 	<div class="content">
