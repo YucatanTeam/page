@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../src/App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\texport let page = \"main\";\n</script>\n\n<style>\n\th1 {\n\t\tcolor: rgba(138, 70, 138, 0.726);\n\t}\n\t.tab-link {\n\t\tcolor: rgba(138, 70, 138, 0.726);\n\t\tborder: 1px solid rgba(138, 70, 138, 0.726);\n\t\tborder-radius: 7px;\n\t\tpadding: 5px 5% 5px 5%;\n\t\tmargin: 12px 0px 5px 3%;\n\t}\n\t.header ,.content {\n\t\tbox-sizing: border-box;\n\t\tpadding: 15px;\n\t\tdisplay: block;\n\t\twidth: 40%;\n\t\tmargin: 10px 30% 0px 30%;\n\t\ttext-align: center;\n\t}\n</style>\n\n<div class=\"header\">\n\t<span>Yucatan .</span>\n\t<a href=\"!#\" class=\"tab-link\" on:click={e=>page=\"main\"}>Home</a>\n\t<a href=\"!#\" class=\"tab-link\" on:click={e=>page=\"about\"}>About us</a>\n</div>\n{#if page == \"main\"}\n\t<div class=\"content\">\n\t\t<h1>Yucatan</h1>\n\t\t<p>Yucatan dev team</p>\n\t</div>\n{:else if page == \"about\"}\n\t<div class=\"content\">\n\t\t<p>University of Mazandaran. Babolsar. Mazandaran</p>\n\t\t<p>Asadi: 0911 897 1878</p>\n\t\t<p>Arefi: 09 ...</p>\n\t\t<p>Mafi:  09 ...</p>\n\t</div>\n{/if}\n\n\n\n"
+  ],
+  "names": [],
+  "mappings": "AAKC,EAAE,cAAC,CAAC,AACH,KAAK,CAAE,KAAK,GAAG,CAAC,CAAC,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,KAAK,CAAC,AACjC,CAAC,AACD,SAAS,cAAC,CAAC,AACV,KAAK,CAAE,KAAK,GAAG,CAAC,CAAC,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,KAAK,CAAC,CAChC,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,GAAG,CAAC,CAAC,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,KAAK,CAAC,CAC3C,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,EAAE,CACtB,MAAM,CAAE,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,EAAE,AACxB,CAAC,AACD,qBAAO,CAAE,QAAQ,cAAC,CAAC,AAClB,UAAU,CAAE,UAAU,CACtB,OAAO,CAAE,IAAI,CACb,OAAO,CAAE,KAAK,CACd,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CACxB,UAAU,CAAE,MAAM,AACnB,CAAC"
+}
